@@ -235,4 +235,7 @@ body {
     margin: 0;
     margin-left: 2rem;
   }
+  .article{
+    margin: .5rem;
+  }
 }
