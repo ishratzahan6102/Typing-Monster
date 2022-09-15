@@ -14,16 +14,16 @@ function addHistory(questionText, timeTaken, errorCount) {
 
   histories.appendChild(newRow);
 
-  let previousTests = JSON.parse(sessionStorage.getItem("testHistory")) || [];
+  let previousTests = JSON.parse(localStorage.getItem("testHistory")) || [];
   previousTests.push({ questionText, timeTaken, errorCount });
-  sessionStorage.setItem("testHistory", JSON.stringify(previousTests));
+  localStorage.setItem("testHistory", JSON.stringify(previousTests));
 
   displayHistory();
 }
 
 function displayHistory() {
   histories.innerHTML = "";
-  const previousTests = JSON.parse(sessionStorage.getItem("testHistory")) || [];
+  const previousTests = JSON.parse(localStorage.getItem("testHistory")) || [];
   
   previousTests.forEach((test) => {
     
