@@ -14,6 +14,26 @@
     />
   </head>
   <body>
+    <header>
+      <nav class="navbar">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <div>
+          <ul class="list">
+          
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#history">History</a>
+            </li>
+            <li class="nav-item">
+              <button style="padding: 10px;" type="button">Search</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
     <h1 class="title"><img src="./logo.png" /></h1>
     <div id="show-time">0 seconds</div>
 
@@ -23,12 +43,12 @@
       <div id="display" class="inactive"></div>
 
       <div class="buttons">
-        <button id="starts">START</button>
+        <button class="button" id="start">START</button>
       </div>
 
       <div class="divider-container">
         <div class="line"></div>
-        <h1 class="title2">History</h1>
+        <h1 id="history" class="title2">History</h1>
         <div class="line"></div>
       </div>
       <div id="histories"></div>
